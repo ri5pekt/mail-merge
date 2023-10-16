@@ -16,3 +16,8 @@ for name in names:
     new_letter_text = letter_text.replace("[name]", name)
     with open("Output/ReadyToSend/"+name+".txt", 'w') as file:
         file.write(new_letter_text)
+
+for name in names:
+    new_letter_text = letter_text.replace("[name]", name)
+    with open("Output/ReadyToSend/letter-for-"+name+".txt", 'w') as file:
+        file.write(new_letter_text)
